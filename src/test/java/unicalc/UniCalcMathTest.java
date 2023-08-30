@@ -47,7 +47,7 @@ public class UniCalcMathTest {
         //When&Then
 
 //        int expected = 3;
-        assertThrows(IllegalArgumentException.class, ()-> calc.divInt(1, 0));
+        assertThrows(IllegalArgumentException.class, () -> calc.divInt(1, 0));
     }
 
     @Test
@@ -59,7 +59,7 @@ public class UniCalcMathTest {
         //When&Then
 
 //        int expected = 3;
-        assertThrows(IllegalArgumentException.class, ()-> calc.divFloat(0, 0));
+        assertThrows(IllegalArgumentException.class, () -> calc.divFloat(0, 0));
     }
 
     @Test
@@ -77,6 +77,7 @@ public class UniCalcMathTest {
         int expected = 0;
         assertEquals(expected, result);
     }
+
     @Test
     public void testDivFloat() {
         //Given
@@ -89,7 +90,7 @@ public class UniCalcMathTest {
 
         //Then
 
-        int expected = Math.round(1f/2f);
+        int expected = Math.round(1f / 2f);
         assertEquals(expected, result);
     }
 
